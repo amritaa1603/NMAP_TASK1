@@ -1,0 +1,105 @@
+# Nmap 7.98 scan initiated Mon Oct 20 21:56:29 2025 as: nmap -sS -oN outputs\\syn_scan.txt -oX outputs\\syn_scan.xml 192.168.1.0/24
+Nmap scan report for dsldevice.lan (192.168.1.1)
+Host is up (0.0058s latency).
+Not shown: 988 filtered tcp ports (no-response)
+PORT      STATE  SERVICE
+80/tcp    open   http
+443/tcp   open   https
+445/tcp   closed microsoft-ds
+631/tcp   closed ipp
+8008/tcp  closed http
+8099/tcp  closed unknown
+49152/tcp closed unknown
+49154/tcp closed unknown
+49155/tcp closed unknown
+49156/tcp closed unknown
+49159/tcp closed unknown
+49161/tcp closed unknown
+MAC Address: EC:A2:A0:BE:15:D0 (Taicang T&W Electronics)
+
+Nmap scan report for 192.168.1.6
+Host is up (0.0087s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT     STATE SERVICE
+8008/tcp open  http
+8009/tcp open  ajp13
+8443/tcp open  https-alt
+9000/tcp open  cslistener
+MAC Address: 68:B9:C2:DA:96:CA (Earda Technologies)
+
+Nmap scan report for 192.168.1.7
+Host is up (0.0087s latency).
+Not shown: 995 closed tcp ports (reset)
+PORT      STATE SERVICE
+80/tcp    open  http
+82/tcp    open  xfer
+554/tcp   open  rtsp
+20000/tcp open  dnp
+49152/tcp open  unknown
+MAC Address: E4:F1:4C:87:C2:4B (Private)
+
+Nmap scan report for 192.168.1.29
+Host is up (0.0060s latency).
+Not shown: 995 closed tcp ports (reset)
+PORT      STATE SERVICE
+80/tcp    open  http
+554/tcp   open  rtsp
+8000/tcp  open  http-alt
+8002/tcp  open  teradataordbms
+10009/tcp open  swdtp-sv
+MAC Address: 00:A8:AA:71:EB:E7 (Unknown)
+
+Nmap scan report for 192.168.1.36
+Host is up (0.0067s latency).
+Not shown: 995 closed tcp ports (reset)
+PORT      STATE SERVICE
+80/tcp    open  http
+554/tcp   open  rtsp
+8000/tcp  open  http-alt
+8002/tcp  open  teradataordbms
+10009/tcp open  swdtp-sv
+MAC Address: 00:A8:AA:72:EA:FB (Unknown)
+
+Nmap scan report for 192.168.1.76
+Host is up (0.0077s latency).
+Not shown: 995 closed tcp ports (reset)
+PORT      STATE SERVICE
+80/tcp    open  http
+554/tcp   open  rtsp
+8000/tcp  open  http-alt
+8002/tcp  open  teradataordbms
+10009/tcp open  swdtp-sv
+MAC Address: 00:A8:A7:19:E3:DF (Unknown)
+
+Nmap scan report for 192.168.1.107
+Host is up (0.0049s latency).
+Not shown: 995 closed tcp ports (reset)
+PORT      STATE SERVICE
+80/tcp    open  http
+554/tcp   open  rtsp
+8000/tcp  open  http-alt
+8002/tcp  open  teradataordbms
+10009/tcp open  swdtp-sv
+MAC Address: 00:A8:AA:6B:EA:DF (Unknown)
+
+Nmap scan report for 192.168.1.108
+Host is up (0.0073s latency).
+Not shown: 995 closed tcp ports (reset)
+PORT      STATE SERVICE
+80/tcp    open  http
+554/tcp   open  rtsp
+8000/tcp  open  http-alt
+8002/tcp  open  teradataordbms
+10009/tcp open  swdtp-sv
+MAC Address: 00:A8:AA:D9:EE:DE (Unknown)
+
+Nmap scan report for 192.168.1.13
+Host is up (0.00051s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3306/tcp open  mysql
+
+# Nmap done at Mon Oct 20 21:57:42 2025 -- 256 IP addresses (9 hosts up) scanned in 72.87 seconds

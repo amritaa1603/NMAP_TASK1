@@ -1,0 +1,102 @@
+# Nmap 7.98 scan initiated Mon Oct 20 21:58:21 2025 as: nmap -sV -O -oN outputs\\detailed_192.168.1.1.txt 192.168.1.1
+WARNING: Service 192.168.1.1:80 had already soft-matched rtsp, but now soft-matched sip; ignoring second value
+WARNING: Service 192.168.1.1:443 had already soft-matched rtsp, but now soft-matched sip; ignoring second value
+Nmap scan report for dsldevice.lan (192.168.1.1)
+Host is up (0.0079s latency).
+Not shown: 995 filtered tcp ports (no-response)
+PORT      STATE  SERVICE      VERSION
+80/tcp    open   rtsp
+443/tcp   open   ssl/rtsp
+445/tcp   closed microsoft-ds
+8008/tcp  closed http
+49152/tcp closed unknown
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.98%I=7%D=10/20%Time=68F66344%P=i686-pc-windows-windows%r
+SF:(GetRequest,3631,"HTTP/1\.0\x20200\x20OK\r\nCache-Control:private,max-a
+SF:ge=0;\r\nX-Frame-Options:SAMEORIGIN\r\nX-Content-Type-Options:nosniff\r
+SF:\nX-XSS-Protection:1;\x20mode=block\r\nContent-Security-Policy:default-
+SF:src\x20'self'\x20blob:\x20'unsafe-inline'\x20'unsafe-eval';img-src\x20\
+SF:*\x20data:\x20'unsafe-inline'\r\nStrict-Transport-Security:max-age=2592
+SF:000;\x20includeSubdomains\r\nReferrer-Policy:\x20no-referrer\r\nSet-Coo
+SF:kie:\x20lang=eng;\x20path=/;\r\nContent-type:text/html;charset=UTF-8;\r
+SF:\n\r\n<!--\x20vim:fenc=utf-8\r\n-->\r\n<html>\r\n<head>\r\n<title>\r\n\
+SF:r\nGPON\x20Home\x20Gateway\r\n\r\n</title>\t\t\r\n<meta\x20http-equiv=\
+SF:"Content-Type\"\x20content=\"text/html;\x20charset=UTF-8\"\x20/>\r\n<me
+SF:ta\x20http-equiv=\"X-UA-Compatible\"\x20content=\"IE=edge,chrome=1\"/>\
+SF:r\n<meta\x20name=\"referrer\"\x20content=\"no-referrer\"/>\r\n<script>i
+SF:f\(self!=top\)\x20top\.location=self\.location\r\n\r\nif\(!window\.name
+SF:\){\r\n\x20\x20\x20\x20\x20\x20\x20\x20location\.reload\(\);\r\n\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20window\.name\x20=\x20'Bell';\r\n}\r\n</script>
+SF:\r\n<link\x20rel=\"stylesheet\"\x20href='/css_glb/main\.css'\x20type='t
+SF:ext/css'/>\r\n<")%r(HTTPOptions,206,"HTTP/1\.0\x20501\x20Not\x20Impleme
+SF:nted\r\nReferrer-Policy:\x20no-referrer\r\nServer:\x20thttpd\r\nContent
+SF:-Type:\x20text/html;\x20charset=utf-8\r\nDate:\x20Mon,\x2020\x20Oct\x20
+SF:2025\x2016:28:51\x20GMT\r\nLast-Modified:\x20Mon,\x2020\x20Oct\x202025\
+SF:x2016:28:51\x20GMT\r\nAccept-Ranges:\x20bytes\r\nConnection:\x20close\r
+SF:\nCache-Control:\x20no-cache,no-store\r\n\r\n<HTML>\n<HEAD><TITLE>501\x
+SF:20Not\x20Implemented</TITLE></HEAD>\n<BODY\x20BGCOLOR=\"#cc9999\"\x20TE
+SF:XT=\"#000000\"\x20LINK=\"#2020ff\"\x20VLINK=\"#4040cc\">\n<H2>501\x20No
+SF:t\x20Implemented</H2>\nThe\x20requested\x20method\x20'OPTIONS'\x20is\x2
+SF:0not\x20implemented\x20by\x20this\x20server\.\n<HR>\n</BODY>\n</HTML>\n
+SF:")%r(RTSPRequest,206,"RTSP/1\.0\x20501\x20Not\x20Implemented\r\nReferre
+SF:r-Policy:\x20no-referrer\r\nServer:\x20thttpd\r\nContent-Type:\x20text/
+SF:html;\x20charset=utf-8\r\nDate:\x20Mon,\x2020\x20Oct\x202025\x2016:28:5
+SF:1\x20GMT\r\nLast-Modified:\x20Mon,\x2020\x20Oct\x202025\x2016:28:51\x20
+SF:GMT\r\nAccept-Ranges:\x20bytes\r\nConnection:\x20close\r\nCache-Control
+SF::\x20no-cache,no-store\r\n\r\n<HTML>\n<HEAD><TITLE>501\x20Not\x20Implem
+SF:ented</TITLE></HEAD>\n<BODY\x20BGCOLOR=\"#cc9999\"\x20TEXT=\"#000000\"\
+SF:x20LINK=\"#2020ff\"\x20VLINK=\"#4040cc\">\n<H2>501\x20Not\x20Implemente
+SF:d</H2>\nThe\x20requested\x20method\x20'OPTIONS'\x20is\x20not\x20impleme
+SF:nted\x20by\x20this\x20server\.\n<HR>\n</BODY>\n</HTML>\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.98%T=SSL%I=7%D=10/20%Time=68F6634C%P=i686-pc-windows-wi
+SF:ndows%r(GetRequest,3631,"HTTP/1\.0\x20200\x20OK\r\nCache-Control:privat
+SF:e,max-age=0;\r\nX-Frame-Options:SAMEORIGIN\r\nX-Content-Type-Options:no
+SF:sniff\r\nX-XSS-Protection:1;\x20mode=block\r\nContent-Security-Policy:d
+SF:efault-src\x20'self'\x20blob:\x20'unsafe-inline'\x20'unsafe-eval';img-s
+SF:rc\x20\*\x20data:\x20'unsafe-inline'\r\nStrict-Transport-Security:max-a
+SF:ge=2592000;\x20includeSubdomains\r\nReferrer-Policy:\x20no-referrer\r\n
+SF:Set-Cookie:\x20lang=eng;\x20path=/;\r\nContent-type:text/html;charset=U
+SF:TF-8;\r\n\r\n<!--\x20vim:fenc=utf-8\r\n-->\r\n<html>\r\n<head>\r\n<titl
+SF:e>\r\n\r\nGPON\x20Home\x20Gateway\r\n\r\n</title>\t\t\r\n<meta\x20http-
+SF:equiv=\"Content-Type\"\x20content=\"text/html;\x20charset=UTF-8\"\x20/>
+SF:\r\n<meta\x20http-equiv=\"X-UA-Compatible\"\x20content=\"IE=edge,chrome
+SF:=1\"/>\r\n<meta\x20name=\"referrer\"\x20content=\"no-referrer\"/>\r\n<s
+SF:cript>if\(self!=top\)\x20top\.location=self\.location\r\n\r\nif\(!windo
+SF:w\.name\){\r\n\x20\x20\x20\x20\x20\x20\x20\x20location\.reload\(\);\r\n
+SF:\x20\x20\x20\x20\x20\x20\x20\x20window\.name\x20=\x20'Bell';\r\n}\r\n</
+SF:script>\r\n<link\x20rel=\"stylesheet\"\x20href='/css_glb/main\.css'\x20
+SF:type='text/css'/>\r\n<")%r(HTTPOptions,206,"HTTP/1\.0\x20501\x20Not\x20
+SF:Implemented\r\nReferrer-Policy:\x20no-referrer\r\nServer:\x20thttpd\r\n
+SF:Content-Type:\x20text/html;\x20charset=utf-8\r\nDate:\x20Mon,\x2020\x20
+SF:Oct\x202025\x2016:28:59\x20GMT\r\nLast-Modified:\x20Mon,\x2020\x20Oct\x
+SF:202025\x2016:28:59\x20GMT\r\nAccept-Ranges:\x20bytes\r\nConnection:\x20
+SF:close\r\nCache-Control:\x20no-cache,no-store\r\n\r\n<HTML>\n<HEAD><TITL
+SF:E>501\x20Not\x20Implemented</TITLE></HEAD>\n<BODY\x20BGCOLOR=\"#cc9999\
+SF:"\x20TEXT=\"#000000\"\x20LINK=\"#2020ff\"\x20VLINK=\"#4040cc\">\n<H2>50
+SF:1\x20Not\x20Implemented</H2>\nThe\x20requested\x20method\x20'OPTIONS'\x
+SF:20is\x20not\x20implemented\x20by\x20this\x20server\.\n<HR>\n</BODY>\n</
+SF:HTML>\n")%r(FourOhFourRequest,292,"HTTP/1\.0\x20404\x20Not\x20Found\r\n
+SF:Referrer-Policy:\x20no-referrer\r\nServer:\x20thttpd\r\nContent-Type:\x
+SF:20text/html;\x20charset=utf-8\r\nDate:\x20Mon,\x2020\x20Oct\x202025\x20
+SF:16:29:00\x20GMT\r\nLast-Modified:\x20Mon,\x2020\x20Oct\x202025\x2016:29
+SF::00\x20GMT\r\nAccept-Ranges:\x20bytes\r\nConnection:\x20close\r\nCache-
+SF:Control:\x20no-cache,no-store\r\n\r\n<html>\n<head>\n\n</head>\n<body>\
+SF:n\t<h1\x20style=\"text-align:\x20center;\x20height:\x20150px\">\n\t\t<s
+SF:pan>\n\t\t\tError\x20404\x20Not\x20found\n\t\t</span>\n\x20\x20\x20\x20
+SF:</h1>\n\x20\x20\x20\x20<p\x20style=\"text-align:center;\x20font-size:\x
+SF:2016px;\x20font-weight:\x20400;\x20padding:\x2010px\x2020px;\">\n\x20\x
+SF:20\x20\x20\x20\x20\x20\x20The\x20requested\x20URL\x20was\x20not\x20foun
+SF:d\x20on\x20this\x20server\n\x20\x20\x20\x20\x20</p>\n\t<div\x20style=\"
+SF:text-align:\x20center;\">\n\t\t<a\x20href=\"/\">Home</a>\n\t</div>\n</b
+SF:ody>\n</html>\n<HR>\n</BODY>\n</HTML>\n");
+MAC Address: EC:A2:A0:BE:15:D0 (Taicang T&W Electronics)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.11 - 4.9
+Network Distance: 1 hop
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Oct 20 21:59:16 2025 -- 1 IP address (1 host up) scanned in 55.98 seconds
